@@ -1,0 +1,44 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-image: url(./bg.png);
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tipForm {
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    #costLabel {
+        margin-left: 25%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    #totalCost {
+        width: 50%;
+    }
+
+    #amountOfPeople {
+        width: 25%;
+    }
+
+    #amountOfTip {
+        display: block;
+    }
+}
+
