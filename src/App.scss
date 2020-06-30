@@ -1,9 +1,8 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.1rem;
 }
 
 .App {
@@ -11,11 +10,21 @@
     height: 100vh;
     background-color: red;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    #header {
+        color: white;
+        stroke: #00A6FF;
+        stroke-width: 2;
+        font-size: 4rem;
+        text-align: center;
+    }
 }
 
 .tipForm {
+    margin-top: 5%;
     background-color: white;
     padding: 5%;
     border-radius: 10px;
@@ -30,15 +39,77 @@
     }
 
     #totalCost {
+        margin-left: 10px;
         width: 50%;
     }
 
     #amountOfPeople {
         width: 25%;
+        margin-right: 10px;
     }
 
     #amountOfTip {
         display: block;
+        width: 25%;
+        margin-left: 37.5%;
+    }
+
+    #peopleLabel {
+        margin-left: 28%;
+    }
+
+    #submitBtn {
+        background-color: #00EA04;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20px;
+        font-size: 1.2rem;
+
+        &:hover {
+            background-color: #00B303   ;
+        }
+    }
+
+    .results {
+        text-align: center;
+        margin-top: 20px;
+
+        #resetBtn {
+            background-color: #00A6FF;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            width: 50%;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+
+            &:hover {
+                background-color: #008EDA;
+            }
+        }
     }
 }
 
+@media screen and (max-width: 768px) {
+    .App {
+        height: 100vh;
+        display: block;
+
+        #header {
+            font-size: 2.5rem;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+    .tipForm {
+        width: 80%;
+    }
+}

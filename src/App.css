@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 1.1rem;
 }
 
 .App {
@@ -12,6 +13,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,7 +25,16 @@
           justify-content: center;
 }
 
+.App #header {
+  color: white;
+  stroke: #00A6FF;
+  stroke-width: 2;
+  font-size: 4rem;
+  text-align: center;
+}
+
 .tipForm {
+  margin-top: 5%;
   background-color: white;
   padding: 5%;
   border-radius: 10px;
@@ -37,14 +51,76 @@
 }
 
 .tipForm #totalCost {
+  margin-left: 10px;
   width: 50%;
 }
 
 .tipForm #amountOfPeople {
   width: 25%;
+  margin-right: 10px;
 }
 
 .tipForm #amountOfTip {
   display: block;
+  width: 25%;
+  margin-left: 37.5%;
+}
+
+.tipForm #peopleLabel {
+  margin-left: 28%;
+}
+
+.tipForm #submitBtn {
+  background-color: #00EA04;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.tipForm #submitBtn:hover {
+  background-color: #00B303;
+}
+
+.tipForm .results {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tipForm .results #resetBtn {
+  background-color: #00A6FF;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.tipForm .results #resetBtn:hover {
+  background-color: #008EDA;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    height: 100vh;
+    display: block;
+  }
+  .App #header {
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .tipForm {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=App.css.map */
