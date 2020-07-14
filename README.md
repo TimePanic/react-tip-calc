@@ -2,7 +2,7 @@
 ### A tip calculator that allows for quick tip calculations
 ---
 
-This application allows the user to enter the total cost of a meal, the amount of people and the amount of tip (%) they would like to give. The application then outputs the total tip and the amount of tip each person pays. Assuming the tip is spreas evenly.
+This application allows the user to enter the total cost of a meal, the amount of people and the amount of tip (%) they would like to give. The application then outputs the total tip and the amount of tip each person pays. Assuming the tip is spread evenly.
 
 Key features of this application include:
 - User is able to see the total tip and the tip shared evenly between the amount of people
