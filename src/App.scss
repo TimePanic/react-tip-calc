@@ -24,7 +24,7 @@
 }
 
 .tipForm {
-    margin-top: 5%;
+    margin-top: 2%;
     background-color: white;
     padding: 5%;
     border-radius: 10px;
@@ -96,7 +96,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .App {
         height: 100vh;
         display: block;
@@ -108,8 +108,71 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .app {
+        #header {
+            font-size: 2rem;
+        }
+    }
+
+    .tipForm {
+        width: 100%;
+        margin-top: 10%;
+
+        #costLabel {
+            margin-left: 35%;
+        }
+
+        #totalCost {
+            margin-left: 10px;
+            width: 50%;
+        }
+    
+        #amountOfPeople {
+            width: 25%;
+            margin-right: 10px;
+        }
+    
+        #amountOfTip {
+            display: block;
+            width: 25%;
+            margin-left: 37.5%;
+        }
+    
+        #peopleLabel {
+            margin-left: 37.5%;
+        }
+    }
+
+}
+
+
 @media screen and (max-width: 1200px) and (min-width: 769px) {
     .tipForm {
         width: 80%;
+
+        #costLabel {
+            margin-left: 39%;
+        }
+
+        #totalCost {
+            margin-left: 10px;
+            width: 50%;
+        }
+    
+        #amountOfPeople {
+            width: 25%;
+            margin-right: 10px;
+        }
+    
+        #amountOfTip {
+            display: block;
+            width: 25%;
+            margin-left: 37.5%;
+        }
+    
+        #peopleLabel {
+            margin-left: 40%;
+        }
     }
 }
